@@ -9,49 +9,50 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgba(252, 252, 252);
-            padding: 50px;
+            margin: 50px;
         }
 
-        div {
+        div.header {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         div.navigationbar {
+            display: flex;
             font-size: 20px;
-            gap: 30px;
+            align-items: center;
+            gap: 40px;
         }
 
         div.request {
             border: 1px solid black;
-            padding: 15px 25px;
+            padding: 20px 30px;
             border-radius: 10px;
-            text-align: center;
         }
 
         div.content {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
         }
 
         div.title {
-            display: flex;
             width: 50%;
+            gap: 35px;
         }
 
         h1 {
             font-size: 60px;
+            line-height: 1.5;
         }
 
         p {
-            font-size: 25px;
+            font-size: 20px;
+            line-height: 28px;
         }
 
         div.image1 {
-            margin-right: 250px;
-            width: 400px;
+            display: flex;
+            justify-content: center;
             margin-top: 50px;
 
         }
@@ -59,34 +60,36 @@
         button {
             background-color: black;
             color: white;
-            border-radius: 8px;
-            padding: 12px 20px;
-            font-size: 25px;
+            border-radius: 14px;
+            padding: 20px 35px;
+            font-size: 20px;
         }
 
         div.brands {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             gap: 120px;
-            padding: 20px;
-            margin-top: 20px;
+            padding: 100px;
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
-    <div class=>
-        <div class="logo">
-            <img src="images/Logo.png" alt="Postivus" width="100%">
-        </div>
-        <div class="navigationbar">
-            <div class="about">About us</div>
-            <div class="services"> Services</div>
-            <div class="cases"> Use Cases</div>
-            <div class="price">Pricing</div>
-            <div class="blog">Blog</div>
+    <div>
+        <div class="header">
+            <div class="logo">
+                <img src="images/Logo.png" alt="Postivus" width="100%">
+            </div>
+            <div class="navigationbar">
+                <div class="about">About us</div>
+                <div class="services"> Services</div>
+                <div class="cases"> Use Cases</div>
+                <div class="price">Pricing</div>
+                <div class="blog">Blog</div>
 
-            <div class="request">Request a quote</div>
+                <div class="request">Request a quote</div>
+            </div>
         </div>
     </div>
     <div class="content">
@@ -97,13 +100,12 @@
                 SE0,
                 social media marketing, and content creation.</p>
         </div>
-        <div class="image1">
-            <img src="images/Illustration.png" alt="illustration" width="500%">
+        <div class="booking">
+            <button>Book a consultation</button>
         </div>
     </div>
-
-    <div class="booking">
-        <button>Book a consultation</button>
+    <div class="image1">
+        <img src="images/Illustration.png" alt="illustration" width="600px">
     </div>
     <div class="brands">
         <img src="images/Company logo (1).png" alt="Amazon" width="100%">
