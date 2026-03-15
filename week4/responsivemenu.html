@@ -6,23 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exe.1 - responsive menu</title>
 </head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2px 20px;
+    }
+
+    div.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.logo {
+        align-items: center;
+    }
+
+    div.navigationbar {
+        display: flex;
+        gap: 25px;
+        font-size: 16px;
+        margin-top: -10px;
+    }
+
+    h6 {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    div.number {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    button.contact {
+        margin-top: 22px;
+        background-color: rgba(249, 97, 43);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 15px 20px;
+        font-weight: bold;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .phone {
+        margin-top: 20px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+</style>
 
 <body>
-    <div>
-        <img src="images/Elementra.png" alt="elementra" width="40%%">
-    </div>
-
-    <div>
-        <div class="home">Home</div>
-        <div class="service">services</div>
-        <div class="work">Work</div>
-        <div class="project">Project Details</div>
-        <div class="contact">Contact</div>
-    </div>
-
-    <div>
-        <h3>555-123-4567</h3>
-        <p>contact</p>
+    <div class="header">
+        <div class="logo">
+            <img src="images/Elementra.png" alt="elementra" width="150px">
+        </div>
+        <div class="navigationbar">
+            <div class="home">Home</div>
+            <div class="service">Services</div>
+            <div class="work">Work</div>
+            <div class="project">Project Details</div>
+            <div class="contact">Contact</div>
+        </div>
+        <div class="number">
+            <img src="images/phone call.png" alt="phone call" class="phone" width="50" height="50">
+            <h6>555-123-4567</h6>
+            <div><button class="contact">Contact</button></div>
+        </div>
+        <img src="images/menu bar.png" alt="menu" class="menu" width="45" height="45">
     </div>
 </body>
 
