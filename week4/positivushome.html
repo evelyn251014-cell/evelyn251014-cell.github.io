@@ -88,6 +88,33 @@
         padding: 50px;
         margin-top: 50px;
     }
+
+    div.service {
+        width: 30%;
+    }
+
+    h2 {
+        background: hsla(87, 100%, 70%, 1);
+        font-size: 40px;
+    }
+
+
+    div.learnmore {
+        display: flex;
+    }
+
+    div.search {
+        display: flex;
+        border: 1px black solid;
+        border-radius: 16px;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.magnifier {
+        margin-top: 30px;
+    }
 </style>
 
 <body>
@@ -111,7 +138,7 @@
         <div class="title">
             <h1>Navigating the digital landscape for success</h1>
 
-            <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+            <p class=>Our digital marketing agency helps businesses grow and succeed online through a range of services
                 including
                 SE0,
                 social media marketing, and content creation.</p>
@@ -132,48 +159,87 @@
     </div>
 
     <div class="service">
-        <p class="service">Serivces</p>
-        <p> At our digital markting agency, we offer a range of srvices to help businesses grow and succeed online.
-            THese services includes:</p>
+        <h2>Serivces</h2>
+        <p class="service"> At our digital markting agency, we offer a range of srvices to help businesses grow and
+            succeed online.
+            These services includes:</p>
     </div>
 
-    <div class="learn more">
-        <div class="search">Search engine optimization
-            <img src="images/Search.png" alt="search" width="100%">
-            <img src="images/Icon (1).png" alt="learn more" width="35px">
-            <p>Learn more</p>
+    <div class="learnmore">
+        <div class="search">
+            <div>
+                <h3>Search engine optimization</h3>
+                <div class="learn"><img src="images/Icon (1).png" alt="learn more" width="35px">Learn more
+                </div>
+            </div>
+
+            <div class="magnifier"><img src="images/Search.png" alt="search" width="100%">
+            </div>
         </div>
+
         <div class="pay">
-            <img src="images/Pay per click.png" alt="Pay per click" width="100%">
-            <img src="images/Icon (1).png" alt="learn more" width="35px">
-            <p>Learn more</p>
+            <div>
+                <h3>Pay-per-click advertising</h3>
+                <img src="images/Icon (1).png" alt="learn more" width="35px">Learn more
+            </div>
+
+            <div class="cursor">
+                <img src="images/Pay per click.png" alt="Pay per click" width="100%">
+            </div>
         </div>
-        <div class="social"> Social Media Marketing
-            <img src="images/Social media.png" alt="social media" width="100%">
-            <img src="images/Icon (2).png" alt="learn more" width="35px">
-            <p>Learn more</p>
+
+        <div class="social">
+            <div>
+                <h3>Social Media Marketing</h3>
+                <img src="images/Icon (2).png" alt="learn more" width="35px">
+                Learn more
+            </div>
+
+            <div class="emoji">
+                <img src="images/Social media.png" alt="social media" width="100%">
+            </div>
         </div>
-        <div class="email">Email Marketing
-            <img src="images/Email.png" alt="Email Marketing" width="100%">
-            <img src="images/Icon (1).png" alt="learn more" width="35px">
-            <p>Learn more</p>
+
+        <div class="email">
+            <div>
+                <h3>Email Marketing</h3>
+                <img src="images/Icon (1).png" alt="learn more" width="35px">Learn more
+            </div>
+
+            <div class="mailling"> <img src="images/Email.png" alt="Email Marketing" width="100%">
+            </div>
         </div>
-        <div class="content">Content Creation
-            <img src="images/Content Creation.png" alt="Content" width="100%">
-            <img src="images/Icon (1).png" alt="learn more" width="35px">
-            <p>Learn more</p>
+
+        <div class="content">
+            <div>
+                <h3>Content Creation</h3>
+                <img src="images/Icon (1).png" alt="learn more" width="35px">
+                Learn more
+            </div>
+
+            <div class="text">
+                <img src="images/Content Creation.png" alt="Content" width="100%">
+
+            </div>
         </div>
-        <div class="analytics">Analytics and Tracking
-            <img src="images/Analystics.png" alt="analytics" width="100%">
-            <img src="images/Icon (2).png" alt="learn more" width="35px">
-            <p>Learn more</p>
+
+        <div class="analytics">
+            <div>
+                <h3>Analytics and Tracking</h3>
+                <img src="images/Icon (2).png" alt="learn more" width="35px">Learn more
+            </div>
+
+            <div class="data"><img src="images/Analystics.png" alt="analytics" width="100%">
+            </div>
         </div>
-        <div class="free proposal">
-            <h2>Let's make things happen</h2>
-            <p>Contract us today to learn more about how our digital marketing services can help your business grow and
-                succeed onmine</p>
-            <button>Get your free pproposal</button>
-        </div>
+    </div>
+    <div class="free proposal">
+        <h2>Let's make things happen</h2>
+        <p>Contract us today to learn more about how our digital marketing services can help your business grow
+            and
+            succeed onmine</p>
+        <button>Get your free pproposal</button>
+    </div>
 </body>
 
 </html>
