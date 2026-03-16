@@ -5,35 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exe.3 - personalpage.html </title>
+    <style>
+        body {
+            font-family: "Iosevka Charon Mono", monospace;
+            background-color: rgb(189, 232, 245);
+
+        }
+
+        div.header {
+            background-color: rgb(28, 77, 141);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+            padding-left: 5px
+        }
+
+        div.socialmedia1 {
+            display: flex;
+            margin-top: 25px;
+            gap: 10px;
+            padding-right: 10px;
+        }
+
+        div.table1 {
+            display: flex;
+            gap: 15px;
+            margin: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        div.week2 {
+            font-size: 15px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 10px 40px;
+            align-items: center;
+            text-decoration: underline;
+        }
+
+        div.week3 {
+            font-size: 15px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 10px 40px;
+            align-items: center;
+            text-decoration: underline;
+        }
+
+        div.week4 {
+            font-size: 15px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 10px 40px;
+            align-items: center;
+            text-decoration: underline;
+        }
+
+        div.content {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .selfies {
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        div.table2 {
+
+            font-size: 15px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+            align-items: center;
+            margin: 20px;
+            text-align: center
+        }
+
+        div.socialmedia2 {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        div.week5 {
+            text-decoration: underline;
+
+        }
+
+        p.disclaimer {
+            font-size: 10px;
+            text-align: center;
+        }
+
+        div.footer {
+            background-color: rgb(28, 77, 141);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="header">
         <h1>LOGO</h1>
-        <img src="images/instagram.png" alt="instagram" width="100%">
-        <img src="images/whatsapp.png" alt="whatsapp" width="100%">
-        <img src="images/pinterest.png" alt="pinterest" width="100%">
+        <div class="socialmedia1">
+            <div class="instagram">
+                <a href="https://www.instagram.com/qianen_06/" alt="Evelyn" target="_blank"><img
+                        src="images/instagram.png" alt="instagram" width="30px"></a>
+            </div>
+            <div class="github"> <a href="https://github.com/evelyn251014-cell" alt="Evelyn" target="_blank"><img
+                        src="images/github.png" alt="github" width="30px"></a>
+            </div>
+            <div class="pinterest"><a href="https://www.pinterest.com/evelynlim1234/" alt="Evelyn" target="_blank">
+                    <img src="images/pinterest.png" alt="pinterest" width="30px">
+                </a>
+            </div>
+        </div>
     </div>
 
     <div class="content">
+        <img src="images/selfies.jpeg" alt="Evelyn" width="200px" height="200px" class="selfies">
         <h2>Evelyn Lim Qian En</h2>
-        <p>Hello! I'm Evelyn Lim, a digital media student. I love to watch TV series or reality TV series, sleeping and
+        <h3>Web Publishing</h3>
+        <p>Hello! I'm Evelyn Lim, a digital media student. I love to watch TV series or reality TV series, sleeping
+            and
             like to do nail art. Welcome to my personal page!</p>
     </div>
     <div class="table1">
-        <div class="week1">
-            <h1><img src="images/check-mark.png" alt="calendar" width="35px"> Week 2</h1>
-            <p>Exercise 1</p>
-            <p>Exercise 2</p>
-        </div>
-
         <div class="week2">
-            <h1><img src="images/check-mark.png" alt="calendar" width="35px">Week 3</h1>
+            <h1><img src="images/check-mark.png" alt="calendar" class="week2" width="35px"> Week 2</h1>
             <p>Exercise 1</p>
             <p>Exercise 2</p>
         </div>
 
         <div class="week3">
+            <h1><img src="images/check-mark.png" alt="calendar" width="35px">Week 3</h1>
+            <p>Exercise 1</p>
+            <p>Exercise 2</p>
+        </div>
+
+        <div class="week4">
             <h1><img src="images/check-mark.png" alt="calendar" width="35px"> Week 4</h1>
             <p>Exercise 1</p>
             <p>Exercise 2</p>
@@ -41,16 +156,29 @@
     </div>
 
     <div class="table2">
-        <h1><img src="images/check-mark.png" alt="calendar" width="35px">Week 5</h1>
+        <div class="week5">
+            <h1><img src="images/check-mark.png" alt="calendar" class="calendar" width="35px" height="35px">Week 5</h1>
+        </div>
         <p>Exercise 1</p>
         <p>Exercise 2</p>
     </div>
 
-    <div class="footer">
-        <img src="images/instagram.png" alt="instagram" width="100%">
-        <img src="images/whatsapp.png" alt="whatsapp" width="100%">
-        <img src="images/pinterest.png" alt="pinterest" width="100%">
-        <p>2026 Evelyn Lim Qian En. All rights reserved.</p>
+    <div class=" footer">
+        <div class="socialmedia2">
+            <div class="instagram"><a href="https://www.instagram.com/qianen_06/" alt="Evelyn" target="_blank"><img
+                        src="images/instagram.png" alt="instagram" width="30px">
+                </a>
+            </div>
+            <div class="github"> <a href="https://github.com/evelyn251014-cell" alt="Evelyn" target="_blank"><img
+                        src="images/github.png" alt="github" width="30px">
+                </a>
+            </div>
+            <div class="pinterest"><a href="https://www.pinterest.com/evelynlim1234/" alt="Evelyn" target="_blank"><img
+                        src="images/pinterest.png" alt="pinterest" width="30px">
+                </a>
+            </div>
+        </div>
+        <p class="disclaimer">@ 2026 Evelyn Lim Qian En. All rights reserved.</p>
     </div>
 </body>
 
