@@ -9,7 +9,7 @@
 <style>
     body {
         font-family: Arial, Helvetica, sans-serif;
-        padding: 2px 20px;
+        padding: 2px 15px;
     }
 
     div.header {
@@ -61,6 +61,37 @@
     .logo img {
         width: 100%;
         height: auto;
+    }
+
+
+    /*Table*/
+    @media screen and (max-width:1200px) {
+        div.navigationbar {
+            display: none;
+        }
+
+        button.contact {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+        }
+
+        .logo {
+            width: 40%
+        }
+    }
+
+    /*Mobile Screen*/
+    @media screen and (max-width:500px) {
+        div.number {
+            display: none;
+        }
+
+        .logo {
+            width: 40%
+        }
     }
 </style>
 
