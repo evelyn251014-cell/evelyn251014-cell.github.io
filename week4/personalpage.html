@@ -9,6 +9,7 @@
         body {
             font-family: "Iosevka Charon Mono", monospace;
             background-color: rgb(189, 232, 245);
+            justify-content: center;
 
         }
 
@@ -18,7 +19,8 @@
             display: flex;
             justify-content: space-between;
             margin: 0px;
-            padding-left: 5px
+            padding-left: 5px;
+            border: none;
         }
 
         div.socialmedia1 {
@@ -31,41 +33,76 @@
         div.table1 {
             display: flex;
             gap: 15px;
-            margin: 20px;
             justify-content: center;
             text-align: center;
+            align-items: stretch;
+            margin: 18px;
         }
 
         div.week2 {
+            flex: 1;
             font-size: 15px;
             background-color: white;
             border-radius: 15px;
-            padding: 10px 40px;
+            padding: 10px;
             align-items: center;
-            text-decoration: underline;
         }
 
+        div.w2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+            display: block;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+
+
         div.week3 {
+            flex: 1;
             font-size: 15px;
             background-color: white;
             border-radius: 15px;
-            padding: 10px 40px;
+            padding: 10px;
             align-items: center;
-            text-decoration: underline;
+        }
+
+        div.w3 {
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+            display: block;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
         }
 
         div.week4 {
+            flex: 1;
             font-size: 15px;
             background-color: white;
             border-radius: 15px;
-            padding: 10px 40px;
+            padding: 10px;
             align-items: center;
-            text-decoration: underline;
         }
+
+        div.w4 {
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+            display: block;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
 
         div.content {
             text-align: center;
             font-size: 15px;
+            padding: 30px 20px;
         }
 
         .selfies {
@@ -74,7 +111,6 @@
         }
 
         div.table2 {
-
             font-size: 15px;
             background-color: white;
             border-radius: 15px;
@@ -91,13 +127,20 @@
         }
 
         div.week5 {
-            text-decoration: underline;
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+            display: block;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
 
         }
 
         p.disclaimer {
             font-size: 10px;
             text-align: center;
+            margin-top: 20px;
         }
 
         div.footer {
@@ -105,6 +148,7 @@
             color: white;
             text-align: center;
             padding: 15px;
+            border: none;
         }
     </style>
 </head>
@@ -131,33 +175,50 @@
         <img src="images/selfies.jpeg" alt="Evelyn" width="200px" height="200px" class="selfies">
         <h2>Evelyn Lim Qian En</h2>
         <h3>Web Publishing</h3>
-        <p>Hello! I'm Evelyn Lim, a digital media student. I love to watch TV series or reality TV series, sleeping
+        <p class="bio">Hello! I'm Evelyn Lim, a digital media student. I love to watch TV series or reality TV series,
+            sleeping
             and
             like to do nail art. Welcome to my personal page!</p>
     </div>
     <div class="table1">
         <div class="week2">
-            <h1><img src="images/check-mark.png" alt="calendar" class="week2" width="35px"> Week 2</h1>
-            <p>Exercise 1</p>
-            <p>Exercise 2</p>
+            <div class="w2">
+                <img src="images/check-mark.png" alt="calendar" class="week2" width="35px">
+                <h1>Week 2</h1>
+            </div>
+            <div class="w2.exe1&2">
+                <p>Exercise 1</p>
+                <p>Exercise 2</p>
+            </div>
         </div>
 
         <div class="week3">
-            <h1><img src="images/check-mark.png" alt="calendar" width="35px">Week 3</h1>
-            <p>Exercise 1</p>
-            <p>Exercise 2</p>
+            <div class="w3">
+                <img src="images/check-mark.png" alt="calendar" width="35px">
+                <h1> Week 3</h1>
+            </div>
+            <div class="w3.exe1&2">
+                <p>Exercise 1</p>
+                <p>Exercise 2</p>
+            </div>
         </div>
 
         <div class="week4">
-            <h1><img src="images/check-mark.png" alt="calendar" width="35px"> Week 4</h1>
-            <p>Exercise 1</p>
-            <p>Exercise 2</p>
+            <div class="w4">
+                <img src="images/check-mark.png" alt="calendar" width="35px">
+                <h1>Week 4</h1>
+            </div>
+            <div class="w4.exe1&2">
+                <p>Exercise 1</p>
+                <p>Exercise 2</p>
+            </div>
         </div>
     </div>
 
     <div class="table2">
         <div class="week5">
-            <h1><img src="images/check-mark.png" alt="calendar" class="calendar" width="35px" height="35px">Week 5</h1>
+            <img src="images/check-mark.png" alt="calendar" class="calendar" width="35px" height="35px">
+            <h1>Week 5</h1>
         </div>
         <p>Exercise 1</p>
         <p>Exercise 2</p>
