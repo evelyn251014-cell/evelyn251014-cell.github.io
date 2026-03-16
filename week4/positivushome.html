@@ -90,30 +90,110 @@
     }
 
     div.service {
-        width: 30%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
     }
 
     h2 {
         background: hsla(87, 100%, 70%, 1);
         font-size: 40px;
+        padding: 5px 10px;
     }
 
+    p.service {
+        font-size: 18px;
+        max-width: 39%
+    }
 
     div.learnmore {
         display: flex;
+        gap: 10px;
+
     }
 
     div.search {
         display: flex;
+        gap: 10px;
         border: 1px black solid;
         border-radius: 16px;
         padding: 30px;
         justify-content: space-between;
         align-items: center;
+        width: 48%;
     }
 
-    div.magnifier {
-        margin-top: 30px;
+    div.pay {
+        display: flex;
+        gap: 10px;
+        border: 1px black solid;
+        border-radius: 16px;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 48%;
+    }
+
+    div.social {
+        display: flex;
+        gap: 10px;
+        border: 1px black solid;
+        border-radius: 16px;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 48%;
+    }
+
+    div.email {
+        display: flex;
+        gap: 10px;
+        border: 1px black solid;
+        border-radius: 16px;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 48%;
+    }
+
+    div.creation {
+        display: flex;
+        gap: 10px;
+        border: 1px black solid;
+        border-radius: 16px;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 48%;
+    }
+
+    div.analytics {
+        display: flex;
+        gap: 10px;
+        border: 1px black solid;
+        border-radius: 16px;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 48%;
+    }
+
+    div.contract {
+        background-color: hsla(0, 0%, 95%, 1);
+        border-radius: 15px;
+        margin-top: 10%;
+        padding: 60px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    button.proposal {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 15px 35px;
     }
 </style>
 
@@ -159,8 +239,8 @@
     </div>
 
     <div class="service">
-        <h2>Serivces</h2>
-        <p class="service"> At our digital markting agency, we offer a range of srvices to help businesses grow and
+        <h2>Services</h2>
+        <p class="service"> At our digital markting agency, we offer a range of services to help businesses grow and
             succeed online.
             These services includes:</p>
     </div>
@@ -206,11 +286,12 @@
                 <img src="images/Icon (1).png" alt="learn more" width="35px">Learn more
             </div>
 
-            <div class="mailling"> <img src="images/Email.png" alt="Email Marketing" width="100%">
+            <div class="mailling">
+                <img src="images/Email.png" alt="Email Marketing" width="100%">
             </div>
         </div>
 
-        <div class="content">
+        <div class="creation">
             <div>
                 <h3>Content Creation</h3>
                 <img src="images/Icon (1).png" alt="learn more" width="35px">
@@ -233,12 +314,18 @@
             </div>
         </div>
     </div>
-    <div class="free proposal">
-        <h2>Let's make things happen</h2>
-        <p>Contract us today to learn more about how our digital marketing services can help your business grow
-            and
-            succeed onmine</p>
-        <button>Get your free pproposal</button>
+
+    <div class="contract">
+        <div class="information">
+            <h3>Let's make things happen</h3>
+            <p>Contract us today to learn more about how our digital marketing services can help your business grow
+                and
+                succeed online</p>
+            <button class="proposal">Get your free proposal</button>
+        </div>
+        <div class="blackface">
+            <img src="images/blackface.png" alt="black face" width="70%">
+        </div>
     </div>
 </body>
 
