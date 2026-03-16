@@ -67,6 +67,10 @@
         line-height: 1.5;
     }
 
+    .speaker {
+        width: 50%
+    }
+
     button.booking {
         background-color: black;
         color: white;
@@ -109,10 +113,10 @@
 
     div.card {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         filter: drop-shadow(0 4px);
-        gap: 10px
+        gap: 20px;
+        padding: 30px 25px
     }
 
     div.learnmore {
@@ -135,10 +139,6 @@
         border-radius: 10px;
         padding: 5px;
         gap: 10px;
-    }
-
-    div.magnifier {
-        width: 50%
     }
 
     div.pay {
@@ -256,11 +256,83 @@
         max-width: 50%
     }
 
+
+
     button.proposal {
         background-color: black;
         color: white;
         border-radius: 10px;
         padding: 15px 35px;
+    }
+
+    .hamburgermenu {
+        display: none;
+    }
+
+    /*Mobile screen*/
+    @media screen and (max-width:1200px) {
+        body {
+            margin: 20px;
+        }
+
+        div.navigationbar {
+            flex-direction: column;
+            gap: 10px;
+            display: none;
+        }
+
+        .hamburgermenu {
+            display: block;
+        }
+
+        .service {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        div.contract {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p.proposal {
+            text-align: center;
+            width: 100%;
+        }
+
+        .blackface {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        div.content {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        div.title {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .speaker img {
+            width: 100%;
+            height: auto;
+            display: block;
+
+        }
+
     }
 </style>
 
@@ -279,13 +351,15 @@
 
                 <div class="request">Request a quote</div>
             </div>
+            <img src="images/hamburger-menu-4.png" alt="hamburger menu" class="hamburgermenu" width="50px">
         </div>
     </div>
     <div class="content">
         <div class="title">
             <h1>Navigating the digital landscape for success</h1>
 
-            <p class=>Our digital marketing agency helps businesses grow and succeed online through a range of services
+            <p class="info">Our digital marketing agency helps businesses grow and succeed online through a range of
+                services
                 including
                 SE0,
                 social media marketing, and content creation.</p>
@@ -397,7 +471,7 @@
             <button class="proposal">Get your free proposal</button>
         </div>
         <div class="blackface">
-            <img src="images/blackface.png" alt="black face" width="70%">
+            <img src="images/blackface.png" alt="black face" class="blackface" width="70%">
         </div>
     </div>
 </body>
