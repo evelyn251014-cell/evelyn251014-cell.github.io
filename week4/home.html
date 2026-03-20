@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe.2 - positivushome.html</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+        body {
+            font-family: "Space Grotesk", sans-serif;
+            background-color: rgba(252, 252, 252);
+            margin: 90px;
+        }
+
+        div {
+            font-size: 20px;
+        }
+
+        div.header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        div.logo {
+            display: flex;
+            gap: 10px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        div.navigationbar {
+            display: flex;
+            font-size: 20px;
+            align-items: center;
+            gap: 40px;
+        }
+
+        div.request {
+            border: 1px solid black;
+            padding: 20px 30px;
+            border-radius: 14px;
+            gap: 10px;
+        }
+
+        div.content {
+            display: flex;
+            margin-top: 50px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div.title {
+            width: 50%
+        }
+
+        h1 {
+            max-width: 550px;
+            font-size: 60px;
+            line-height: 1.5;
+        }
+
+        p {
+            max-width: 450px;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .speaker {
+            width: 50%
+        }
+
+        .speakerphone {
+            display: none
+        }
+
+        button.booking {
+            background-color: black;
+            color: white;
+            border-radius: 14px;
+            margin-top: 20px;
+            padding: 20px 35px;
+            font-size: 20px;
+        }
+
+        div.speaker {
+            margin-top: 30px;
+
+        }
+
+        div.brands {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            padding: 50px;
+            margin-top: 50px;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .title1 {
+            background-color: hsla(87, 100%, 70%, 1);
+            font-size: 40px;
+        }
+
+        p.service {
+            font-size: 18px;
+            max-width: 50%
+        }
+
+        .table1 {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            justify-content: center;
+            filter: drop-shadow(0px 6px hsla(234, 17%, 12%, 1));
+        }
+
+        div.learn {
+            display: flex;
+            gap: 10px;
+        }
+
+        p.learnmore {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        div.cardset {
+            margin: auto;
+        }
+
+        .servicecard {
+            background-color: hsla(0, 0%, 95%, 1);
+            display: flex;
+            border: 1px black solid;
+            border-radius: 35px;
+            padding: 30px
+        }
+
+        .digitalservices {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 380px;
+            height: 250px;
+        }
+
+        .searchtext {
+            background-color: hsla(87, 100%, 70%, 1);
+            border-radius: 10px;
+            padding: 5px 6px;
+            font-size: 30px;
+            line-height: 1.3;
+        }
+
+        div.magnifier {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            width: 45%;
+        }
+
+        .paycard {
+            background-color: hsla(87, 100%, 70%, 1);
+            display: flex;
+            border: 1px black solid;
+            border-radius: 35px;
+            padding: 30px;
+        }
+
+        .paytext {
+            background-color: hsla(0, 0%, 95%, 1);
+            border-radius: 10px;
+            padding: 5px 6px;
+            font-size: 30px;
+            line-height: 1.3;
+        }
+
+        .pay {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 380px;
+            height: 250px;
+        }
+
+        .cursor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+        }
+
+        .table2 {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            justify-content: center;
+            filter: drop-shadow(0px 6px hsla(234, 17%, 12%, 1));
+        }
+
+        .socialcard {
+            background-color: black;
+            display: flex;
+            border: 1px black solid;
+            border-radius: 35px;
+            padding: 30px;
+            justify-content: space-between;
+        }
+
+        .social {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 380px;
+            height: 250px;
+        }
+
+        .socialtext {
+            background-color: hsla(0, 0%, 95%, 1);
+            border-radius: 10px;
+            padding: 5px 6px;
+            font-size: 30px;
+            line-height: 1.3;
+        }
+
+        .sociallearn {
+            color: white;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        .smilling {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .emailcard {
+            background-color: hsla(0, 0%, 95%, 1);
+            display: flex;
+            border: 1px black solid;
+            border-radius: 35px;
+            padding: 30px;
+        }
+
+        .emailtext {
+            background-color: hsla(87, 100%, 70%, 1);
+            border-radius: 10px;
+            padding: 4px 6px;
+            font-size: 30px;
+            line-height: 1.3;
+        }
+
+        .email {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 380px;
+            height: 250px;
+        }
+
+        .envolop {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .table3 {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            justify-content: center;
+            filter: drop-shadow(0px 6px hsla(234, 17%, 12%, 1));
+        }
+
+        .contentscard {
+            background-color: hsla(87, 100%, 70%, 1);
+            display: flex;
+            border: 1px black solid;
+            border-radius: 35px;
+            padding: 30px
+        }
+
+        .contents {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 380px;
+            height: 250px;
+        }
+
+        .contenttext {
+            background-color: hsla(0, 0%, 95%, 1);
+            border-radius: 10px;
+            padding: 5px 6px;
+            font-size: 30px;
+            line-height: 1.3;
+        }
+
+        .message {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .analyticscard {
+            background-color: black;
+            display: flex;
+            border: 1px black solid;
+            border-radius: 35px;
+            padding: 30px;
+            justify-content: space-between;
+        }
+
+        .analytics {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 380px;
+            height: 250px;
+        }
+
+        .analyticstext {
+            background-color: hsla(0, 0%, 95%, 1);
+            border-radius: 10px;
+            padding: 5px 6px;
+            font-size: 30px;
+            line-height: 1.3;
+        }
+
+        .analyticslearn {
+            color: white;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        .data {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .proposal {
+            background-color: hsla(0, 0%, 95%, 1);
+            border-radius: 15px;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            padding: 25px 35px;
+            justify-content: space-between;
+        }
+
+        .lets {
+            font-size: 30px;
+        }
+
+        .info {
+            width: 70%
+        }
+
+        .contactus {
+            font-size: 16px;
+            max-width: 45%;
+        }
+
+        .face {
+            width: 20%;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        button.freeproposal {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            border: none;
+        }
+
+        .hamburgermenu {
+            display: none;
+        }
+
+        /*Mobile screen*/
+        @media screen and (max-width:1200px) {
+            body {
+                margin: 20px;
+            }
+
+            div.navigationbar {
+                flex-direction: column;
+                gap: 10px;
+                display: none;
+            }
+
+            .hamburgermenu {
+                display: block;
+            }
+
+            .service {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            div.contract {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            p.proposal {
+                text-align: center;
+                width: 100%;
+            }
+
+            .face {
+                display: none;
+            }
+
+            .brands {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .table1 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .table2 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .table3 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                width: 100%
+            }
+        }
+
+        p.service {
+            max-width: 100%
+        }
+
+        @media screen and (max-width:768px) {
+
+            div.content {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .speaker {
+                display: none;
+            }
+
+            .speakerphone {
+                display: block;
+                width: 100%
+            }
+
+            div.title {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .speaker img {
+                width: 100%;
+                height: auto;
+                display: block;
+
+            }
+
+            p.learnmore {
+                display: none;
+            }
+
+            .analyticslearn {
+                display: none;
+            }
+
+            .sociallearn {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <div class="header">
+            <div class="logo">
+                <img src="images/Icon.png" alt="Postivus Logo" width="50px">Postivus
+            </div>
+            <div class="navigationbar">
+                <div class="about">About us</div>
+                <div class="services"> Services</div>
+                <div class="cases"> Use Cases</div>
+                <div class="price">Pricing</div>
+                <div class="blog">Blog</div>
+
+                <div class="request">Request a quote</div>
+            </div>
+            <div class="hamburgermenu">
+                <img src="images/hamburger-menu-4.png" alt="hamburger menu" width="50px">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title">
+            <h1>Navigating the digital landscape for success</h1>
+            <div class="speakerphone">
+                <img src="images/Illustration.png" alt="illustration" width="100%" height="auto">
+            </div>
+            <p class="info">Our digital marketing agency helps businesses grow and succeed online through a range of
+                services
+                including
+                SE0,
+                social media marketing, and content creation.</p>
+            <button class="booking">Book a consultation</button>
+        </div>
+        <div class="speaker">
+            <img src="images/Illustration.png" alt="illustration" width="100%" height="auto">
+        </div>
+    </div>
+
+    <div class="brands">
+        <div> <img src="images/Company logo (1).png" alt="Amazon" width="100%"></div>
+        <div> <img src="images/Company logo (2).png " alt="Dribble" width="100%"></div>
+        <div><img src="images/Company logo (3).png" alt="Hubspot" width="100%"></div>
+        <div><img src="images/Company logo (4).png" alt="Hubspot" width="100%"></div>
+        <div> <img src="images/Company logo (5).png" alt="Neflix" width="100%"></div>
+        <div> <img src="images/Company logo (6).png " alt="Zoom" width="100%"></div>
+    </div>
+
+    <div class="service">
+        <h3 class="title1">Services</h3>
+        <p class="service">At our digital marketing agency, we offer a range of services to help businesses grow and
+            succeed online.
+            These services includes:</p>
+    </div>
+
+    <div class="cardset">
+        <div class="table1">
+            <div class="servicecard">
+                <div class="digitalservices">
+                    <div class="text">
+                        <h3>
+                            <span class="searchtext">Search engine</span>
+                            <span class="searchtext">optimization</span>
+                        </h3>
+                    </div>
+                    <div class="learn">
+                        <img src="images/Icon (2).png" alt="share" width="40" height="40">
+                        <p class="learnmore">Learn more</p>
+                    </div>
+                </div>
+
+                <div class=" magnifier">
+                    <img src="images/Search.png" alt=" magnifier" width="100%">
+                </div>
+            </div>
+
+            <div class="paycard">
+                <div class="pay">
+
+                    <div class="text">
+                        <h3>
+                            <span class="paytext">Pay-per-click</span>
+                            <span class="paytext">advertising</span>
+                        </h3>
+                    </div>
+
+                    <div class="learn">
+                        <img src="images/Icon (2).png" alt="share" width="40" height="40">
+                        <p class="learnmore">Learn more</p>
+                    </div>
+                </div>
+
+                <div class="cursor">
+                    <img src="images/Pay per click.png" alt="cursor" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="table2">
+            <div class="socialcard">
+                <div class="social">
+
+                    <div class="text">
+                        <h3>
+                            <span class="socialtext">Social Media</span><br>
+                            <span class="socialtext">Marketing</span>
+                        </h3>
+                    </div>
+
+                    <div class="learn">
+                        <img src="images/Icon (2).png" alt="share" width="40" height="40">
+                        <p class="sociallearn">Learn more</p>
+                    </div>
+                </div>
+                <div class="smiling">
+                    <img src="images/Social media.png" alt="smilling" width="100%">
+                </div>
+            </div>
+
+            <div class="emailcard">
+                <div class="email">
+
+                    <div class="text">
+                        <h3>
+                            <span class="emailtext">Email</span><br>
+                            <span class="emailtext">Marketing</span>
+                        </h3>
+                    </div>
+
+                    <div class=" learn">
+                        <img src="images/Icon (2).png" alt="share" width="40" height="40">
+                        <p class="learnmore">Learn more</p>
+                    </div>
+                </div>
+                <div class="envolop">
+                    <img src="images/Email.png" alt="envolop" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="table3">
+            <div class="contentscard">
+
+
+                <div class="contents">
+                    <div class="text">
+                        <h3>
+                            <span class="contenttext">Content</span><br>
+                            <span class="contenttext">Creation</span>
+                        </h3>
+                    </div>
+
+                    <div class=" learn">
+                        <img src="images/Icon (2).png" alt="share" width="40" height="40">
+                        <p class="learnmore">Learn more</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <img src="images/Content Creation.png" alt="messages" width="100%">
+                </div>
+            </div>
+
+            <div class="analyticscard">
+
+                <div class="analytics">
+                    <div class="text">
+                        <h3>
+                            <span class="analyticstext">Analytics and </span>
+                            <span class="analyticstext">Tracking</span>
+                        </h3>
+                    </div>
+
+                    <div class="learn">
+                        <img src="images/Icon (2).png" alt="share" width="40" height="40">
+                        <p class="analyticslearn">Learn more</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <img src="images/Analystics.png" alt="analytics" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="proposal">
+        <div class="info">
+            <h2 class="lets">
+                Let's make things happen
+            </h2>
+            <p class="contactus">Contact us today to learn more about how our digital marketing services can help
+                your
+                business
+                grow
+                and
+                succeed online.</p>
+            <button class="freeproposal">Get your free proposal</button>
+        </div>
+        <div class="face">
+            <img src="images/blackface.png" alt="face" width="200">
+        </div>
+    </div>
+</body>
+
+</html>
