@@ -5,102 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exe.1 - responsive menu</title>
-</head>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 10px 20px;
-    }
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 20px;
+        }
 
-    div.header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-    }
+        div.header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
 
-    div.logo {
-        align-items: center;
-        width: 150px;
-    }
+        div.logo {
+            align-items: center;
+            width: 150px;
+        }
 
-    div.p {
-        font-weight: bold;
-    }
+        div.p {
+            font-weight: bold;
+        }
 
-    div.navigationbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        font-size: 16px;
-    }
-
-    .number {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .phonecall {
-        display: flex;
-        gap: 6px
-    }
-
-    .phone {
-        width: 25%;
-    }
-
-    .phoneno {
-        font-size: 15px;
-        font-weight: bold;
-        width: 69%;
-
-    }
-
-    .button {
-        display: flex;
-    }
-
-    button.contact {
-        background-color: rgba(249, 97, 43);
-        color: white;
-        border: none;
-        border-radius: 8px;
-        padding: 15px 20px;
-        font-weight: bold;
-    }
-
-    .menu {
-        display: none;
-    }
-
-
-
-    /*Table*/
-    @media screen and (max-width:1200px) {
         div.navigationbar {
-            display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            font-size: 16px;
+        }
+
+        .number {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .phonecall {
+            display: flex;
+            gap: 6px
+        }
+
+        .phone {
+            width: 25%;
+        }
+
+        .phoneno {
+            font-size: 15px;
+            font-weight: bold;
+            width: 69%;
+
+        }
+
+        .button {
+            display: flex;
         }
 
         button.contact {
-            display: none;
+            background-color: rgba(249, 97, 43);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 20px;
+            font-weight: bold;
         }
 
         .menu {
-            display: block;
-        }
-
-    }
-
-    /*Mobile Screen*/
-    @media screen and (max-width:700px) {
-        .phonecall {
             display: none;
         }
 
-    }
-</style>
+
+
+        /*Table*/
+        @media screen and (max-width:1200px) {
+            div.navigationbar {
+                display: none;
+            }
+
+            button.contact {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+
+        }
+
+        /*Mobile Screen*/
+        @media screen and (max-width:700px) {
+            .phonecall {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
 
 <body>
     <div class="header">
