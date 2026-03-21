@@ -5,11 +5,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exe.3 - Personal Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oxygen+Mono&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+        body {
+            background-image: url("index_img/wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-y: 30%;
+            margin: 0;
+            font-family: "Delius Swash Caps", cursive;
+        }
+
+        .header {
+            background-color: rgb(255, 195, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .social {
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .selfies {
+            border-radius: 60%;
+            margin: 20px;
+        }
+
+        .logo {
+            border-radius: 60%;
+        }
+
+        .bio {
+            background-color: rgba(255, 255, 255, 0.352);
+            border-radius: 15px;
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .content {
+            color: black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+
+        p.bio {
+            color: black;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .table1 {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            gap: 5%;
+        }
+
+        .week2 {
+            background-color: rgba(255, 255, 255, 0.682);
+            border-radius: 15px;
+            text-align: center;
+            padding: 30px;
+            width: 29%;
+        }
+
+        .w2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+            gap: 5px;
+        }
+
+        .week3 {
+            background-color: rgba(255, 255, 255, 0.682);
+            border-radius: 15px;
+            text-align: center;
+            padding: 30px;
+            width: 29%
+        }
+
+        .w3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+            gap: 5px;
+        }
+
+        .week4 {
+            background-color: rgba(255, 255, 255, 0.682);
+            border-radius: 15px;
+            text-align: center;
+            padding: 30px;
+            width: 29%
+        }
+
+        .w4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+        }
+
+        .table2 {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.682);
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        .w5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+        }
+
+        .week5 {
+            border-radius: 15px;
+            padding: 15px;
+            align-items: center;
+            margin: 20px;
+            text-align: center;
+            width: 100%
+        }
+
+        .footer {
+            background-color: rgb(255, 195, 0);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .socialmedia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            gap: 10px
+        }
+
+        .disclaimer {
+            font-size: 12px;
+            text-align: center;
+
+        }
+
+        /*mobile screen*/
+        @media screen and (max-width:600px) {
+            .social {
+                display: none;
+            }
+
+            .table1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px
+            }
+
+            .week2 {
+                width: 85%
+            }
+
+            .week3 {
+                width: 85%
+            }
+
+            .week4 {
+                width: 85%
+            }
+        }
+    </style>
+
 </head>
 
 <body>
     <div class="header">
-        <div class="logo">LOGO</div>
+        <div class="logo">
+            <img src="index_img/logo.jpg" alt="logo" class="logo" width="50">
+        </div>
         <div class="social">
             <div class="instagram">
                 <a href="https://www.instagram.com/qianen_06/" alt="Evelyn" target="_blank"><img
@@ -26,90 +219,100 @@
     </div>
 
     <div class="content">
-        <div class="name">
-            <h3>Evelyn Lim Qian En</h3>
+        <div class="selfies">
+            <img src="index_img/selfies.jpeg" alt="myself" class="selfies" width="150">
         </div>
 
         <div class="bio">
-            <p> Hello! I'm Evelyn Lim, I'm turning 20 this year. I'm a digital media student from Dasein Academy
+            <h2 class="name">Evelyn Lim Qian En</h2>
+            <h3 class="text">Web Pubshling </h3>
+            <p class="bio"> Hello! I'm Evelyn Lim, I'm turning 20 this year. I'm a digital media student from Dasein
+                Academy
                 of Art. I love to watch TV series or reality TV series,
                 sleeping
                 and
                 like to do nail art. Welcome to my personal page!</p>
         </div>
+    </div>
 
-        <div class="exerciselist">
-            <div class="table1">
-                <div class="week2">
-                    <div class="week2">
-                        <div class="w2">
-                            Week 2
-                        </div>
-                        <div class="exe-w2">
-                            <p>Exercise 1</p>
-                            <p>Exercise 2</p>
-                        </div>
-                    </div>
+    <div class="exerciselist">
+        <div class="table1">
 
-                    <div class="week3">
-                        <div class="w3">
-                            Week 3
-                        </div>
+            <div class="week2">
+                <div class="w2">
+                    <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
+                    <h3> Week 2</h3>
+                </div>
+                <div class="exe-w2">
+                    <p><a href="http://127.0.0.1:5500/week1/exe1.html" target="_blank">Exercise 1</a></p>
+                    <p><a href="http://127.0.0.1:5500/week1/exe2.html" target="_blank">Exercise 2</a></p>
+                </div>
+            </div>
 
-                        <div class="exe-w3">
-                            <p>Exercise 1</p>
-                            <p>Exercise 2</p>
-                            <p>Exercise 3</p>
-                        </div>
-                    </div>
-
-                    <dis class="week4">
-                        <div class="w4">
-                            Week 4
-                        </div>
-
-                        <div class="exe-w4">
-                            <p>Exercise 1</p>
-                            <p>Exercise 2</p>
-                        </div>
-                    </dis>
+            <div class="week3">
+                <div class="w3">
+                    <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
+                    <h3>Week 3</h3>
                 </div>
 
-                <div class="table2">
-                    <div class="week5">
-                        <div class="w5">
-                            Week 5
-                        </div>
-
-                        <div class="exe-w5">
-                            <p>Exerice 1</p>
-                            <p>exercise 2</p>
-                            <p>Exericse 3</p>
-                        </div>
-                    </div>
+                <div class="exe-w3">
+                    <p><a href="http://127.0.0.1:5500/week2/artist.html" target="_blank">Exercise 1</a></p>
+                    <p><a href="http://127.0.0.1:5500/week2/buttom.html" target="_blank">Exercise 2</a></p>
+                    <p><a href="http://127.0.0.1:5500/week2/self-intro.html" target="_blank">Exercise 3</a></p>
                 </div>
+            </div>
+
+            <dis class="week4">
+                <div class="w4">
+                    <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
+                    <h3> Week 4</h3>
+                </div>
+
+                <div class="exe-w4">
+                    <p><a href="http://127.0.0.1:5500/week3/flexbox1.html" target="_blank">Exercise 1 </a></p>
+                    <p><a href="http://127.0.0.1:5500/week3/flexbox2.html" target="_blank">Exercise 2</a></p>
+                </div>
+            </dis>
+        </div>
+    </div>
+
+    <div class="table2">
+        <div class="week5">
+            <div class="w5">
+                <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
+                <h3> Week 5</h3>
+            </div>
+
+            <div class="exe-w5">
+                <p><a href="http://127.0.0.1:5500/week4/menu.html" target=" _blank">Exercise 1</a></p>
+                <p><a href="http://127.0.0.1:5500/week4/home.html" target=" _blank">Exercise 2</a></p>
+                <p><a href="http://127.0.0.1:5500/index.html" target="_blank">Exercise 3</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="socialmedia">
+            <div class="instagram">
+                <a href="https://www.instagram.com/qianen_06/" alt="Evelyn" target="_blank"><img
+                        src="index_img/instagram.png" alt="instagram" width="30px"></a>
+            </div>
+            <div class="github"> <a href="https://github.com/evelyn251014-cell" alt="Evelyn" target="_blank"><img
+                        src="index_img/github.png" alt="github" width="30px"></a>
+            </div>
+            <div class="pinterest"><a href="https://www.pinterest.com/evelynlim1234/" alt="Evelyn" target="_blank">
+                    <img src="index_img/pinterest.png" alt="pinterest" width="30px">
+                </a>
+
             </div>
         </div>
 
-        <div class="footer">
-            <div class="socialmedia">
-                <div class="instagram">
-                    <a href="https://www.instagram.com/qianen_06/" alt="Evelyn" target="_blank"><img
-                            src="index_img/instagram.png" alt="instagram" width="30px"></a>
-                </div>
-                <div class="github"> <a href="https://github.com/evelyn251014-cell" alt="Evelyn" target="_blank"><img
-                            src="index_img/github.png" alt="github" width="30px"></a>
-                </div>
-                <div class="pinterest"><a href="https://www.pinterest.com/evelynlim1234/" alt="Evelyn" target="_blank">
-                        <img src="index_img/pinterest.png" alt="pinterest" width="30px">
-                    </a>
+        <div class="disclaimer">
+            <p class="disclaimer">@ 2026 Evelyn Lim Qian En. All rights reserved</p>
+        </div>
+    </div>
 
-                </div>
-
-                <div class=disclaimer>
-                    <p>@ 2026 Evelyn Lim Qian En. All rights reserved</p>
-                </div>
-            </div>
 </body>
 
 </html>
