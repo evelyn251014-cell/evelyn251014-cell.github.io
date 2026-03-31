@@ -10,6 +10,10 @@
       font-size: 20px;
   }
 
+  .hamburgermenu {
+      display: none;
+  }
+
   div.header {
       display: flex;
       justify-content: space-between;
@@ -59,7 +63,7 @@
   .footernavigation {
       display: flex;
       gap: 30px;
-      font-size: 14px;
+      font-size: 10px;
       font-weight: lighter;
       text-decoration: underline;
   }
@@ -101,17 +105,18 @@
       border-radius: 14px;
       margin-top: 10px;
       padding: 60px 20px;
-      gap: 10%;
-      width: 45%;
+      width: 50%;
       align-items: center;
       justify-content: space-around;
   }
 
   .enter {
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px;
-      padding: 20px 140px;
+      gap: 45%;
+      padding: 20px 150px;
       font-size: 14px;
+      text-align: left;
   }
 
   .news {
@@ -119,7 +124,7 @@
       color: black;
       text-align: center;
       font-size: 14px;
-      padding: 20px 100px;
+      padding: 20px 50px;
       border-radius: 10px;
   }
 
@@ -155,4 +160,47 @@
       text-decoration: underline;
       font-size: 15px;
       margin-top: 10px;
+  }
+
+  /*mobile*/
+  @media screen and (max-width: 1275px) {
+      body {
+          margin: 20px;
+      }
+
+      div.content {
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          gap: 20px;
+      }
+
+      div.navigationbar {
+          flex-direction: column;
+          gap: 10px;
+          display: none;
+      }
+
+      .hamburgermenu {
+          display: block;
+      }
+
+      .face {
+          display: none;
+      }
+
+      .brands {
+          display: flex;
+          flex-wrap: wrap;
+      }
+  }
+
+  @media screen and (max-width: 850px) {
+      .speaker {
+          display: none;
+      }
+
+      .speakerphone {
+          display: block;
+      }
   }
