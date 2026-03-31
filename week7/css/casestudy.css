@@ -134,3 +134,89 @@ button.freeproposal {
 .hamburgermenu {
     display: none;
 }
+
+.tablecase {
+    background-color: hsla(234, 17%, 12%, 1);
+    color: white;
+    display: flex;
+    padding: 50px;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.tablecase p {
+    font-size: 18px;
+    box-sizing: border-box;
+    border-right: 1px solid white;
+    margin: 10px;
+}
+
+.learnmorecase {
+    display: flex;
+    gap: 10px;
+}
+
+.casestudylearn {
+    font-size: 20px;
+    width: 45%
+}
+
+.greenarrow {
+    width: 45%;
+}
+
+.casestudy {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.working {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.processdetail {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.consultation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.processheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.number {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.numbertitle {
+    text-align: left;
+
+}
+
+.text p {
+    margin-top: 10px;
+    border-top: 1px solid black;
+    font-size: 15px;
+    width: 100%
+}
+
+.process {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
