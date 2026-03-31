@@ -98,6 +98,7 @@ p.learnmore {
     width: 45%;
     justify-content: space-between;
     background-color: hsla(87, 100%, 70%, 1);
+    box-shadow: 0px 4px;
 }
 
 .whitetext {
@@ -119,6 +120,7 @@ p.learnmore {
     width: 45%;
     justify-content: space-between;
     background-color: hsla(0, 0%, 100%, 1);
+    box-shadow: 0px 4px;
 
 }
 
@@ -144,6 +146,7 @@ p.learnmore {
     justify-content: space-between;
     background-color: hsla(0, 0%, 0%, 1);
     color: white;
+    box-shadow: 0px 4px;
 }
 
 .card {
@@ -203,16 +206,8 @@ button.freeproposal {
         margin: 20px;
     }
 
-    div.content {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        gap: 20px;
-    }
 
     div.navigationbar {
-        flex-direction: column;
-        gap: 10px;
         display: none;
     }
 
@@ -220,13 +215,17 @@ button.freeproposal {
         display: block;
     }
 
+    .cardrow {
+        flex-direction: column;
+    }
+
     .face {
         display: none;
     }
 
     .brands {
+        width: calc(33.33%-13.33px);
         display: flex;
-        flex-wrap: wrap;
     }
 }
 
