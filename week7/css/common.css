@@ -36,3 +36,120 @@
       border-radius: 14px;
       gap: 10px;
   }
+
+  div.footer {
+      background-color: hsla(234, 17%, 12%, 1);
+      color: white;
+      padding: 40px 60px;
+      border-radius: 20px;
+  }
+
+  .footerhead {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+  }
+
+  .footerlogo {
+      font-size: 24px;
+  }
+
+  .footernavigation {
+      display: flex;
+      gap: 30px;
+      font-size: 14px;
+      font-weight: lighter;
+      text-decoration: underline;
+  }
+
+  .sociallink {
+      display: flex;
+      gap: 15px;
+  }
+
+  .contactus {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .contactinfo {
+      width: 45%;
+  }
+
+  .contacttitle {
+      background-color: hsla(87, 100%, 70%, 1);
+      color: black;
+      font-size: 20px;
+      margin-top: 10px;
+      font-weight: bold;
+      border-radius: 10px;
+      text-align: center;
+      width: 30%;
+      margin-bottom: 10px;
+  }
+
+  .contactus p {
+      font-size: 14px;
+  }
+
+  .subscribe {
+      display: flex;
+      background-color: hsla(233, 10%, 18%, 1);
+      border-radius: 14px;
+      margin-top: 10px;
+      padding: 60px 20px;
+      gap: 20px;
+      width: 45%;
+  }
+
+  .enter {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 15px 50px;
+      font-size: 14px;
+      text-align: left;
+  }
+
+  .news {
+      background-color: hsla(87, 100%, 70%, 1);
+      color: black;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px 40px;
+      border-radius: 10px;
+  }
+
+  .footermiddle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+  }
+
+  .info {
+      font-size: 15px;
+      padding: 10px;
+  }
+
+  .disclaimer {
+      display: flex;
+      gap: 20px;
+      border-top: 1px solid white;
+      font-size: 15px;
+      margin-top: 10px;
+  }
+
+  .reserved {
+      font-size: 15px;
+      margin-top: 10px;
+  }
+
+  .privacy {
+      margin-left: 20px;
+      text-decoration: underline;
+      font-size: 15px;
+      margin-top: 10px;
+  }
