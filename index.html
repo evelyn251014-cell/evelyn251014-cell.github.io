@@ -10,7 +10,7 @@
 
         body {
             background-image: url("index_img/wallpaper.jpg");
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-size: 100%;
             background-position-y: 30%;
             margin: 0;
@@ -56,7 +56,6 @@
         }
 
 
-
         p.bio {
             color: black;
             max-width: 90%;
@@ -64,88 +63,37 @@
             margin-right: auto;
         }
 
-        .table1 {
+        .exerciselist {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
             margin: 20px;
             gap: 5%;
-        }
-
-        .week2 {
             background-color: rgba(255, 255, 255, 0.682);
             border-radius: 15px;
-            text-align: center;
-            padding: 30px;
-            width: 29%;
+            padding: 20px;
+            width: 30%;
+            height: 250px;
         }
 
-        .w2 {
+        .week {
             display: flex;
-            align-items: center;
             justify-content: center;
-            border-bottom: 2px solid black;
-            padding-bottom: 1px;
-            gap: 5px;
-        }
-
-        .week3 {
-            background-color: rgba(255, 255, 255, 0.682);
-            border-radius: 15px;
+            align-items: center;
             text-align: center;
-            padding: 30px;
-            width: 29%
-        }
-
-        .w3 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 25px;
+            width: 50%;
+            gap: 20px;
             border-bottom: 2px solid black;
-            padding-bottom: 1px;
-            gap: 5px;
         }
 
-        .week4 {
-            background-color: rgba(255, 255, 255, 0.682);
-            border-radius: 15px;
-            text-align: center;
-            padding: 30px;
-            width: 29%
-        }
-
-        .w4 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-            border-bottom: 2px solid black;
-            padding-bottom: 1px;
-        }
-
-        .table2 {
-            display: flex;
-            background-color: rgba(255, 255, 255, 0.682);
-            margin: 20px;
-            border-radius: 15px;
-        }
-
-        .w5 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-            border-bottom: 2px solid black;
-            padding-bottom: 1px;
-        }
-
-        .week5 {
-            border-radius: 15px;
-            padding: 15px;
-            align-items: center;
-            margin: 20px;
-            text-align: center;
-            width: 100%
-        }
 
         .footer {
             background-color: rgb(255, 195, 0);
@@ -171,27 +119,21 @@
         /*mobile screen*/
         @media screen and (max-width:600px) {
             .social {
-                display: none;
+                display: block;
+                display: flex;
             }
 
-            .table1 {
+            .exerciselist {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                width: 100%;
                 gap: 20px
             }
 
-            .week2 {
-                width: 85%
-            }
-
-            .week3 {
-                width: 85%
-            }
-
-            .week4 {
-                width: 85%
+            .week {
+                width: 90%
             }
         }
     </style>
@@ -236,54 +178,54 @@
     </div>
 
     <div class="exerciselist">
-        <div class="table1">
+        <div class="card">
 
-            <div class="week2">
-                <div class="w2">
-                    <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
-                    <h3> Week 2</h3>
-                </div>
-                <div class="exe-w2">
-                    <p><a href="https://evelyn251014-cell.github.io/week1/exe1.html" target="_blank">Exercise 1</a></p>
-                    <p><a href="https://evelyn251014-cell.github.io/week1/exe2.html" target="_blank">Exercise 2</a></p>
-                </div>
+            <div class="week">
+                <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
+                <h3> Week 2</h3>
             </div>
 
-            <div class="week3">
-                <div class="w3">
-                    <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
-                    <h3>Week 3</h3>
-                </div>
+            <div class="exe-w2">
+                <p><a href="https://evelyn251014-cell.github.io/week1/exe1.html" target="_blank">Exercise 1</a></p>
+                <p><a href="https://evelyn251014-cell.github.io/week1/exe2.html" target="_blank">Exercise 2</a></p>
+            </div>
+        </div>
 
-                <div class="exe-w3">
-                    <p><a href="https://evelyn251014-cell.github.io/week2/artist.html" target="_blank">Exercise 1</a>
-                    </p>
-                    <p><a href="https://evelyn251014-cell.github.io/week2/buttom.html" target="_blank">Exercise 2</a>
-                    </p>
-                    <p><a href="https://evelyn251014-cell.github.io/week2/self-intro.html" target="_blank">Exercise
-                            3</a></p>
-                </div>
+        <div class="card">
+            <div class="week">
+                <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
+
+                <h3>Week 3</h3>
             </div>
 
-            <dis class="week4">
-                <div class="w4">
-                    <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
-                    <h3> Week 4</h3>
-                </div>
+            <div class="exe-w3">
+                <p><a href="https://evelyn251014-cell.github.io/week2/artist.html" target="_blank">Exercise 1</a>
+                </p>
+                <p><a href="https://evelyn251014-cell.github.io/week2/buttom.html" target="_blank">Exercise 2</a>
+                </p>
+                <p><a href="https://evelyn251014-cell.github.io/week2/self-intro.html" target="_blank">Exercise
+                        3</a></p>
+            </div>
+        </div>
 
-                <div class="exe-w4">
-                    <p><a href="https://evelyn251014-cell.github.io/week3/flexbox1.html" target="_blank">Exercise 1 </a>
-                    </p>
-                    <p><a href="https://evelyn251014-cell.github.io/week3/flexbox2.html" target="_blank">Exercise 2</a>
-                    </p>
-                </div>
-            </dis>
+        <div class="card">
+            <div class="week">
+                <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
+                <h3> Week 4</h3>
+            </div>
+
+            <div class="exe-w4">
+                <p><a href="https://evelyn251014-cell.github.io/week3/flexbox1.html" target="_blank">Exercise 1 </a>
+                </p>
+                <p><a href="https://evelyn251014-cell.github.io/week3/flexbox2.html" target="_blank">Exercise 2</a>
+                </p>
+            </div>
         </div>
     </div>
 
-    <div class="table2">
-        <div class="week5">
-            <div class="w5">
+    <div class="exerciselist">
+        <div class="card">
+            <div class="week">
                 <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
                 <h3> Week 5</h3>
             </div>
@@ -292,6 +234,35 @@
                 <p><a href="https://evelyn251014-cell.github.io/week4/menu.html" target=" _blank">Exercise 1</a></p>
                 <p><a href="https://evelyn251014-cell.github.io/week4/home.html" target=" _blank">Exercise 2</a></p>
                 <p><a href="https://evelyn251014-cell.github.io/index.html" target="_blank">Exercise 3</a></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="week">
+                <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
+                <h3> Week 7</h3>
+            </div>
+
+            <div class="exe-w6">
+                <p><a href="https://evelyn251014-cell.github.io/week7/casestudy.html" target=" _blank">Exercise
+                        1</a>
+                </p>
+                <p><a href="https://evelyn251014-cell.github.io/week7/home.html" target=" _blank">Exercise 2</a></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="week">
+                <img src="index_img/check-mark.png" alt="calander" width="35px" height="35px">
+                <h3> Week 9</h3>
+            </div>
+
+            <div class="exe-w6">
+                <p><a href="https://evelyn251014-cell.github.io//week9/relative.html" target=" _blank">Exercise
+                        1</a>
+                </p>
+                <p><a href="https://evelyn251014-cell.github.io/week9/relative-travel.html" target=" _blank">Exercise
+                        2</a>
+                </p>
             </div>
         </div>
     </div>
