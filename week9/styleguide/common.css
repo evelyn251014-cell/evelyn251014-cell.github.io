@@ -1,0 +1,61 @@
+/* === rootvariables === */
+:root {
+    /* Desktop size */
+    font-family: Domine, serif;
+    --desktop-h1-font-size: 50px;
+    --desktop-h1-line-height: 1.16;
+
+    --desktop-h2-font-size: 36px;
+    --desktop-h2-line-height: 1.8;
+
+    --desktop-h3-font-size: 32px;
+    --desktop-h3-line-height: 1.16;
+
+    --desktop-h4-font-size: 29px;
+    --desktop-h4-line-height: 1.16;
+
+    --desktop-h5-font-size: 24px;
+    --desktop-h5-line-height: 1.16;
+
+    --desktop-h6-font-size: 22px;
+    --desktop-h6-line-height: 1.8;
+
+    /* Tablet size */
+    --tablet-h1-font-size: 50px;
+    --tablet-h1-line-height: 1.16;
+
+    --tablet-h2-font-size: 36px;
+    --tablet-h2-line-height: 1.8;
+
+    --tablet-h3-font-size: 32px;
+    --tablet-h3-line-height: 1.16;
+
+    --tablet-h4-font-size: 29px;
+    --tablet-h4-line-height: 1.16;
+
+    --tablet-h5-font-size: 24px;
+    --tablet-h5-line-height: 1.16;
+
+    --tablet-h6-font-size: 22px;
+    --tablet-h6-line-height: 1.8;
+
+    /* Mobile size */
+    --mobile-h1-font-size: 38px;
+    --mobile-h1-line-height: 1.16;
+
+    --mobile-h2-font-size: 32px;
+    --mobile-h2-line-height: 1.16;
+
+    --mobile-h3-font-size: 29px;
+    --mobile-h3-line-height: 1.16;
+
+    --mobile-h4-font-size: 28px;
+    --mobile-h4-line-height: 1.8;
+
+    --mobile-h5-font-size: 24px;
+    --mobile-h5-line-height: 1.16;
+
+    --mobile-h6-font-size: 12px;
+    --mobile-h6-line-height: 1.8;
+
+}
