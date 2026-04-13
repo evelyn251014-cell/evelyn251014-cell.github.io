@@ -1,7 +1,6 @@
 /* === rootvariables === */
 :root {
     /* Desktop size */
-    font-family: Domine, serif;
     --desktop-h1-font-size: 50px;
     --desktop-h1-line-height: 1.16;
 
@@ -58,4 +57,16 @@
     --mobile-h6-font-size: 12px;
     --mobile-h6-line-height: 1.8;
 
+    --font-heading: "Domine", serif;
+    --font-body: "Inter", sans-serif;
+
+    --box-radius: 50px;
+
+    --primary-color: #bc4b20;
+    --color-text-dark: #00000;
+    --color-text-light: #FFFFFF;
+}
+
+.navigation menu {
+    display: flex;
 }
