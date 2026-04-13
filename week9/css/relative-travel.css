@@ -1,4 +1,18 @@
-div.container {
+div.cardlist {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 10%;
+}
+
+div.card {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+div.cardcontainer {
     background-color: white;
     width: 250px;
     height: auto;
@@ -74,12 +88,12 @@ div.likes {
 div.ongoing {
     display: flex;
     background-color: white;
-    width: 15%;
     border-radius: 10px;
     padding: 15px 20px;
-    position: relative;
-    bottom: 150px;
-    left: 11%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
     gap: 10px;
     filter: drop-shadow(0px 0px 5px rgba(115, 115, 115, 0.18))
 }
@@ -92,4 +106,35 @@ div.detail {
 
 div.subtitle {
     font-size: 13px;
+}
+
+@media screen and (max-width: 1100px) {
+    div.cardlist {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    div.cardcontainer {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    div.card {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        margin: 10px;
+        max-width: 400px;
+    }
+
+    div.ongoing {
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
 }
