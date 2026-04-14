@@ -95,7 +95,6 @@
 body {
     font-family: var(--font-body);
     color: var(--color-text-dark);
-    line-height: 1.8;
     background-color: #FFFFFF;
     font-weight: 400;
 }
@@ -146,6 +145,37 @@ h5,
 h6 {
     font-family: var(--font-heading);
 }
+
+.h1 {
+    font-size: var (var(--desktop-h1-font-size));
+    line-height: var (var(--desktop-h1-line-height));
+}
+
+.h2 {
+    font-size: var(--desktop-h2-font-size);
+    line-height: var(--desktop-h2-line-height);
+}
+
+.h3 {
+    font-size: var (var(--desktop-h3-font-size));
+    line-height: var (var(--desktop-h3-line-height));
+}
+
+.h4 {
+    font-size: var(--desktop-h4-font-size);
+    line-height: var (var(--desktop-h4-line-height));
+}
+
+.h5 {
+    font-size: var(--desktop-h5-font-size);
+    line-height: var(--desktop-h5-line-height);
+}
+
+.h6 {
+    font-size: var(--desktop-h6-font-size);
+    line-height: var (var(--desktop-h6-line-height));
+}
+
 
 .btn {
     background-color: #bc4b20;
